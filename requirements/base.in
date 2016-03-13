@@ -1,0 +1,5 @@
+django < 1.10
+django-dotenv
+django-grappelli
+django-pipeline
+unipath

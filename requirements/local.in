@@ -1,0 +1,6 @@
+-r base.in
+
+django-debug-toolbar
+django-extensions
+pip-tools
+ipython
