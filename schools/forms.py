@@ -3,7 +3,7 @@
 
 
 # Django imports
-from django.contrib import admin
+from django import forms
 
 
 # Third party apps imports
@@ -12,4 +12,4 @@ from django.contrib import admin
 # Local imports
 
 
-# Register your models here.
+# Create your forms here.

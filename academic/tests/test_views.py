@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
 # Python imports
 
 
 # Django imports
-from django.db import models
+from django.test import TestCase
 
 
 # Third party apps imports
@@ -12,4 +11,4 @@ from django.db import models
 # Local imports
 
 
-# Create your models here.
+# Create your tests here.
