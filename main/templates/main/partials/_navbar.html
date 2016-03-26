@@ -1,4 +1,4 @@
 <ul class="nav nav-pills">
   <li{% if active_link == "index" %} class="active"{% endif %}><a href="{% url 'main:index' %}">Inicio</a></li>
-  <li{% if active_link == "school" %} class="active"{% endif %}><a href="{% url 'main:school' %}">Colegio</a></li>
+  <li{% if active_link == "school" %} class="active"{% endif %}><a href="{% url 'schools:create' %}">Colegio</a></li>
 </ul>

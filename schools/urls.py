@@ -10,15 +10,15 @@ from django.conf.urls import url
 
 
 # Local imports
-from .views import IndexView
+from .views import SchoolCreateView
 
 # Create your tests here.
 
 
 urlpatterns = [
     url(
-        r'^$',
-        IndexView.as_view(),
-        name='index'
-    ),
+        r'^school/$',
+        SchoolCreateView.as_view(),
+        name='create'
+    )
 ]

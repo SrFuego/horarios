@@ -15,6 +15,7 @@ from django.apps import AppConfig
 
 # Configure your app here.
 class SchoolsConfig(AppConfig):
+
     name = 'schools'
     verbose_name = 'Colegio'
     verbose_name_plural = 'Colegios'

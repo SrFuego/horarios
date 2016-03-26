@@ -15,5 +15,6 @@ from django.apps import AppConfig
 
 # Configure your app here.
 class MainConfig(AppConfig):
+
     name = 'main'
     verbose_name = u'Aplicación Principal'
