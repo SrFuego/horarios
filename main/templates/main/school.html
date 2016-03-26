@@ -1,0 +1,85 @@
+{% extends "main/base.html" %}
+{% load crispy_forms_tags %}
+
+
+
+{% block title %}Agregar Colegio{% endblock title %}
+
+
+
+{% block header %}
+  {% include "main/partials/_navbar.html" with active_link='school' %}
+{% endblock header %}
+
+
+
+{% block content %}
+<div class="text-center">
+  <h1>Agregar Colegio</h1>
+</div>
+
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+    <form method="POST">{% csrf_token %}
+
+      {% if form.errors %}
+        {% for field in form %}
+          {% for error in field.errors %}
+            <div class="alert alert-danger">
+              <strong>{{ error|escape }}</strong>
+            </div>
+          {% endfor %}
+        {% endfor %}
+      {% endif %}
+
+
+
+      <div id="div_id_name" class="form-group">
+        <label for="id_name" class="control-label requiredField">Nombre<span class="asteriskField">*</span> </label>
+        <div class="controls ">
+          <input class="textinput textInput form-control" id="id_name" maxlength="75" name="name" type="text" />
+        </div>
+      </div>
+      <div id="div_id_level" class="form-group">
+        <label for="id_level" class="control-label requiredField">Nivel<span class="asteriskField">*</span> </label>
+        <div class="controls ">
+          <select class="select form-control" id="id_level" name="level">
+            <option value="" selected="selected">---------</option>
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+          </select>
+        </div>
+      </div>
+      <div id="div_id_classrooms" class="form-group">
+        <label for="id_classrooms" class="control-label requiredField">Cantidad de aulas<span class="asteriskField">*</span> </label>
+        <div class="controls ">
+          <input class="numberinput form-control" id="id_classrooms" min="0" name="classrooms" type="number" />
+        </div>
+      </div>
+      <div id="div_id_hours" class="form-group">
+        <label for="id_hours" class="control-label requiredField">Cantidad de horas académicas<span class="asteriskField">*</span> </label>
+        <div class="controls ">
+          <input class="numberinput form-control" id="id_hours" min="0" name="hours" type="number" />
+        </div>
+      </div>
+      <div id="div_id_hour_duration" class="form-group">
+        <label for="id_hour_duration" class="control-label requiredField">Minutos de duración de las horas académicas<span class="asteriskField">*</span> </label>
+        <div class="controls ">
+          <input class="numberinput form-control" id="id_hour_duration" min="0" name="hour_duration" type="number" />
+        </div>
+      </div>
+      <div id="div_id_break_time" class="form-group">
+        <label for="id_break_time" class="control-label requiredField">Minutos de recreo<span class="asteriskField">*</span> </label>
+        <div class="controls ">
+          <input class="numberinput form-control" id="id_break_time" min="0" name="break_time" type="number" />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="controls text-center">
+          <input type="submit" name="submit" value="Enviar" class="btn btn-primary" id="submit-id-submit" />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock content %}

@@ -2,5 +2,6 @@
 
 django-debug-toolbar
 django-extensions
-pip-tools
 ipython
+pip-tools
+pygraphviz

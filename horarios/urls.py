@@ -23,7 +23,7 @@ from main import urls as main_urls
 urlpatterns = [
     url(r'^grappelli/', include('grappelli.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^', include(main_urls, namespace='main')),
+    url(r'^', include(main_urls, namespace='main'))
 ]
 
 

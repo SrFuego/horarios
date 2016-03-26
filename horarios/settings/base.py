@@ -30,6 +30,7 @@ DJANGO_APPS = (
 )
 
 THIRD_PARTY_APPS = (
+    'crispy_forms',
     'pipeline',
 )
 
@@ -120,3 +121,6 @@ STATIC_URL = '/static/'
 
 # Grappelli admin title
 GRAPPELLI_ADMIN_TITLE = 'horarios'
+
+# Crispy style
+CRISPY_TEMPLATE_PACK = 'bootstrap3'

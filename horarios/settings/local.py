@@ -44,5 +44,10 @@ DATABASES = {
 
 # Pipeline configuration
 PIPELINE = {
-    'PIPELINE_ENABLED': True,
+    'PIPELINE_ENABLED': False,
+}
+
+GRAPH_MODELS = {
+    'all_applications': True,
+    'group_models': True,
 }

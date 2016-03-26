@@ -16,8 +16,8 @@ from django.db import models
 class School(models.Model):
 
     LEVEL_CHOICES = (
-        ('Primaria', 'Primaria'),
-        ('Secundaria', 'Secundaria'),
+        ('primaria', 'Primaria'),
+        ('secundaria', 'Secundaria'),
     )
 
     break_time = models.PositiveSmallIntegerField('Minutos de recreo')
