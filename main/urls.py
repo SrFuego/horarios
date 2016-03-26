@@ -10,7 +10,7 @@ from django.conf.urls import url
 
 
 # Local imports
-from .views import IndexView, SchoolFormView
+from .views import IndexView, SchoolCreateView
 
 # Create your tests here.
 
@@ -23,7 +23,7 @@ urlpatterns = [
     ),
     url(
         r'^school/$',
-        SchoolFormView.as_view(),
+        SchoolCreateView.as_view(),
         name='school'
     )
 ]

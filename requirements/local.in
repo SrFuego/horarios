@@ -1,5 +1,6 @@
 -r base.in
 
+django-crispy-forms
 django-debug-toolbar
 django-extensions
 ipython

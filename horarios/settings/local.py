@@ -20,6 +20,7 @@ ALLOWED_HOSTS = ['*']
 THIRD_PARTY_APPS_LOCAL = (
     'debug_toolbar',
     'django_extensions',
+    'crispy_forms',
 )
 
 

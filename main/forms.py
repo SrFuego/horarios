@@ -29,5 +29,6 @@ class SchoolForm(forms.ModelForm):
         self.helper = FormHelper(self)
         self.helper.add_input(Submit('submit', 'Enviar'))
 
-    def clean(self):
-        return self.cleaned_data
+    def clean_name(self):
+        name = self.cleaned_data['name']
+        return name

@@ -10,6 +10,13 @@ from django.contrib import admin
 
 
 # Local imports
+from .models import School
 
 
 # Register your models here.
+@admin.register(School)
+class SchoolAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'name', 'level', 'classrooms', 'hours', 'hour_duration',
+        'break_time', )

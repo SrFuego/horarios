@@ -6,6 +6,7 @@
 #
 click==6.3                # via pip-tools
 decorator==4.0.9          # via ipython, traitlets
+django-crispy-forms==1.6.0
 django-debug-toolbar==1.4
 django-dotenv==1.4.1
 django-extensions==1.6.1
